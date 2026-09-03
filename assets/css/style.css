@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#0d6efd !important;
+    transition:.4s;
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin-left:15px;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#ffd43b !important;
+}
+
+/* Hero */
+
+.hero-section{
+
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('../images/banner.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    min-height:85vh;
+
+    display:flex;
+    align-items:center;
+}
+
+.hero-section h1{
+
+    font-size:60px;
+    font-weight:700;
+}
+
+.hero-section p{
+
+    font-size:22px;
+}
+
+/* Cards */
+
+.product-card{
+
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+
+.product-card img{
+
+    transition:.5s;
+
+}
+
+.product-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.card-title{
+
+    font-weight:700;
+
+}
+
+/* Buttons */
+
+.btn{
+
+    border-radius:50px;
+
+    padding:10px 25px;
+
+    font-weight:600;
+
+}
+
+/* Sections */
+
+section{
+
+    padding:70px 0;
+
+}
+
+h2{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:#111;
+
+    color:#fff;
+
+}
+
+footer a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+}
+
+footer a:hover{
+
+    color:#ffd43b;
+
+}
+
+/* Floating WhatsApp */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:60px;
+
+height:60px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:#fff;
+
+font-size:30px;
+
+text-decoration:none;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+z-index:999;
+
+}
+
+.whatsapp:hover{
+
+color:white;
+
+transform:scale(1.1);
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero-section{
+
+text-align:center;
+
+padding:100px 20px;
+
+}
+
+.hero-section h1{
+
+font-size:38px;
+
+}
+
+.hero-section p{
+
+font-size:18px;
+
+}
+
+}
